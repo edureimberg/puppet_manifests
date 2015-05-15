@@ -6,4 +6,12 @@ node 'client1' {
 		managehome	=> 'true',	  
 		shell		=> '/bin/bash',
 	}
+
+	user { 'zemane':
+		ensure		=> 'present',
+		comment		=> 'Ze Mane',
+		home		=> '/home/zemane',
+		managehome	=> 'true',	  
+		shell		=> '/bin/bash',
+	}
 }
